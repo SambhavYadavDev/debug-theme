@@ -1,0 +1,202 @@
+﻿@page "/new-license"
+
+<nav class="mb-2" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="new-license">License</a></li>
+        <li class="breadcrumb-item active">New License</li>
+    </ol>
+</nav>
+<div class="mb-9">
+    <div class="row justify-content-between align-items-end g-3 mb-5">
+        <div class="col-12 col-sm-auto col-xl-8">
+            <h2 class="mb-0">Create a License</h2>
+        </div>
+        <div class="col-12 col-sm-auto col-xl-4">
+            <div class="d-flex">
+                <button class="btn btn-phoenix-primary px-5 me-2">Save</button><a class="btn btn-primary px-5 w-100 text-nowrap">Activate license</a>
+            </div>
+        </div>
+    </div>
+    <div class="row g-5">
+        <div class="col-xl-8">
+            <div class="row gx-3 gy-4">
+                <h4 class="fs-7 mb-0">License Details</h4>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-floating">
+                        <input class="form-control" id="floatingEventInput" type="text" placeholder="Company name" />
+                        <label for="floatingEventInput">Company name</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectTask">
+                            <option selected="selected">Select business type</option>
+                            <option value="1">Pharma</option>
+                            <option value="2">Pharma Distribution</option>
+                            <option value="3">Pharma Retail</option>
+                            <option value="4">Other</option>
+                        </select>
+                        <label for="floatingSelectTask">Business</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectPrivacy">
+                            <option selected="selected">Select GST type</option>
+                            <option value="1">Register</option>
+                            <option value="2">Non register</option>
+                        </select>
+                        <label for="floatingSelectPrivacy">GST</label>
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1" checked="checked" />
+                        <label class="form-check-label" for="inlineRadio1">Online</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2" />
+                        <label class="form-check-label" for="inlineRadio2">Offline</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="inlineRadio3" type="radio" name="inlineRadioOptions" value="option3" />
+                        <label class="form-check-label" for="inlineRadio3">Both</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12 mt-md-0 mt-lg-1">
+                    <div class="form-floating">
+                        <input class="form-control" id="floatingVenueInput" type="text" placeholder="Venue" />
+                        <label for="floatingVenueInput">Venue</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectCountry">
+                            <option selected="selected">Select Country</option>
+                            <option value="1">India</option>
+                        </select>
+                        <label for="floatingSelectCountry">Country</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectState">
+                            <option selected="selected">Select State </option>
+                            <option value="1">JAMMU & KASHMIR</option>
+                            <option value="2">HIMACHAL PRADESH</option>
+                            <option value="3">PUNJAB</option>
+                            <option value="4">CHANDIGARH</option>
+                            <option value="5">UTTARAKHAND</option>
+                            <option value="6">HARYANA</option>
+                            <option value="7">DELHI</option>
+                            <option value="8">RAJASTHAN</option>
+                            <option value="9">UTTAR PRADESH</option>
+                            <option value="10">BIHAR</option>
+                            <option value="11">SIKKIM</option>
+                            <option value="12">ARUNACHAL PRADESH</option>
+                            <option value="13">NAGALAND</option>
+                            <option value="14">MANIPUR</option>
+                            <option value="15">MIZORAM</option>
+                        </select>
+                        <label for="floatingSelectState"> State</label>
+                    </div>
+                </div>
+                <h4 class="fs-7 mt-7">Validation</h4>
+                <div class="col-sm-12">
+                    <div class="form-floating">
+                        <input class="form-control" id="floatingOrganizersInput" type="text" placeholder="License key" readonly="readonly" />
+                        <label for="floatingOrganizersInput">License key</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="flatpickr-input-container">
+                        <div class="form-floating">
+                            <input class="form-control datetimepicker" id="startDatepicker" type="text" placeholder="start date" data-options='{"disableMobile":true}' /><span class="uil uil-calendar-alt flatpickr-icon text-body-tertiary"></span>
+                            <label class="ps-6" for="startDatepicker">Activate date</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="flatpickr-input-container">
+                        <div class="form-floating">
+                            <input class="form-control datetimepicker" id="endDatepicker" type="text" placeholder="end date" data-options='{"disableMobile":true}' /><span class="uil uil-calendar-alt flatpickr-icon text-body-tertiary"></span>
+                            <label class="ps-6" for="endDatepicker">Expiry date</label>
+                        </div>
+                    </div>
+                </div>
+                @* <div class="col-12 gy-6">
+                <div class="dropzone dropzone-multiple p-0 mb-5" id="my-awesome-dropzone" data-dropzone="data-dropzone">
+                <div class="fallback">
+                <input name="file" type="file" multiple="multiple" />
+                </div>
+                <div class="dz-preview d-flex flex-wrap">
+                <div class="border border-translucent bg-body-emphasis rounded-3 d-flex flex-center position-relative me-2 mb-2" style="height:80px;width:80px;"><img class="dz-image" src="../../assets/img/products/23.png" alt="..." data-dz-thumbnail="data-dz-thumbnail" /><a class="dz-remove text-body-quaternary" href="#!" data-dz-remove="data-dz-remove"><span data-feather="x"></span></a></div>
+                </div>
+                <div class="dz-message text-body-tertiary text-center" data-dz-message="data-dz-message">
+                Drag your photo here <span class="text-body-secondary">or </span>
+                <button class="btn btn-link p-0" type="button">Browse from device </button><br /><img class="mt-3 me-2" src="../../assets/img/icons/image-icon.png" width="40" alt="" />
+                </div>
+                </div>
+                </div> *@
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="border-bottom border-translucent pb-6 mb-6">
+                <h4 class="fs-7 mb-4">Privacy</h4>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked="checked" />
+                    <label class="form-check-label fw-normal" for="exampleRadios1">Our distribution partner and our company can use this license </label>
+                </div>
+                <div class="form-check mb-0">
+                    <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2" />
+                    <label class="form-check-label fw-normal" for="exampleRadios2">Only our company can use this license</label>
+                </div>
+            </div>
+            <div class="border-bottom border-translucent mb-6">
+                <div class="form-check">
+                    <input class="form-check-input" id="flexChecked" type="checkbox" checked="checked" />
+                    <label class="form-check-label fw-bold fs-8 mb-5" for="flexChecked">Show the number of available tickets</label>
+                </div>
+            </div>
+            <h4 class="fs-7 mb-4">License pricing</h4>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="freeTicket" type="radio" name="ticketPricing" value="freeTicket" checked="checked" />
+                <label class="form-check-label" for="freeTicket">Free</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="paidTicket" type="radio" name="ticketPricing" value="paidTicket" />
+                <label class="form-check-label" for="paidTicket">Paid</label>
+            </div>
+            <div class="row g-3 mb-7 mt-1 pb-5">
+                <div class="col-6 col col-xl-7">
+                    <h4 class="fs-9">Option</h4>
+                </div>
+                <div class="col-6 col-xl-5">
+                    <h4 class="fs-9">Price</h4>
+                </div>
+                <div class="col-6 col-xl-7">
+                    <input class="form-control" type="text" placeholder="Enterprise" readonly="readonly" />
+                </div>
+                <div class="col-6 col-xl-5">
+                    <input class="form-control" type="number" placeholder="₹19,898" readonly="readonly" />
+                </div>
+                <div class="col-6 col-xl-7">
+                    <input class="form-control" type="text" placeholder="Standard" readonly="readonly" />
+                </div>
+                <div class="col-6 col-xl-5">
+                    <input class="form-control" type="number" placeholder="₹11,898" readonly="readonly" />
+                </div>
+                <div class="col-6 col-xl-7">
+                    <input class="form-control" type="text" placeholder="Basic" readonly="readonly" />
+                </div>
+                <div class="col-6 col-xl-5">
+                    <input class="form-control" type="number" placeholder="₹6,898" readonly="readonly" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}
